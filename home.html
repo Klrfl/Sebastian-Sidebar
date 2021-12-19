@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Sidebar | Home</title>
+    
+    <!--CSS link-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    
+    
+</head>
+<body>
+    <nav id="sidebar">
+        <section class="top">
+            <i class="fa fa-warehouse"></i>
+            <h2>WAREHOUSE</h2>
+            <button id="closebtn" onclick="closeNav()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </section>
+        
+        <hr>
+        
+        <section class="bottom">
+            <div class="links">
+                <a href="home.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="blog.html">My Blog</a>
+                <a href="work.html">See My Work</a>
+                <a href="donate.html" class="donate">Buy me a Coffee</a>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Made by Klrfl, 2021. All rights reserved.</p>
+            </div>
+        </section>
+    </nav>
+    
+    <header>
+        <button id="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="input-container">
+            <button class="searchbtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search..">
+        </div>
+        <i class="fas fa-warehouse"></i>
+    </header>
+    <main>
+        <article>
+            <h1>Sebastian Vettel</h1>
+            <section class="Seb-pic-container">
+                <img src="images/sebastian/Sebastian in red.jpg" alt="Seb in red Ferrari race suit.">
+                <img src="images/sebastian/sebastian-vettel-4341612_1920.jpg" alt="Seb in SF90">
+            </section>
+            
+            <section>
+                <h2>Who is he?</h2>
+                <p>Sebastian Vettel is a German f1 driver. He debuted in the 2007 United States Grand Prix. He replaced Robert Kubica which had a massive crash the day before. He is now driving for Aston Martin F1 Team as the first driver. He's a living legend and has a solid fanbase around the world (Everyone is a Seb fan, even if they don't admit it). here's a couple teams he has raced for:
+                    <ul>
+                        <li>BMW Sauber</li>
+                        <li>Toro Rosso</li>
+                        <li>Red Bull Racing</li>
+                        <li>Scuderia Ferrari</li>
+                        <li>Aston Martin Cognizant F1 Team</li>
+                    </ul>
+                </section>
+                
+                <section>
+                <h2>Where is he?</h2>
+                <p>I don't know, why are you asking that? do you want to meet him? or do you want to rob his house? Anyways, all i know is he is from Germany.</p>
+                <p> Perhaps he resides in Monaco like may other F1 drivers. Honestly I don't know if that helps.</p>
+            </section>
+            
+            <section>
+                <h2>How is he doing?</h2>
+                <p>He is a bit stressed when he is still driving for Ferrari, especially after the rain-soaked 2019 German GP, where his confidence skydived straight through the earth because he beached his car even though he is comfortably leading. When he first moved to Aston Martin, I don't know what happened, but his head rapidly balds. There are many F1 fans mocking him about the situation by making memes :( . But since he moved, he is a bit happier, especially his podium at Baku and Hungary (where he is disqualified because his car couldn't provide enough fuel sample).</p>
+            </section>
+            
+            <section>
+                <h2>The P tags below are from JS</h2>
+                <p>NOTE THAT THIS SECTION IS STILL IN CONSTRUCTION. IF YOU CAN GIVE CODE PLEASE DO I DON'T LIKE JS</p>
+            </section>
+            
+            <section>
+                <h2>Here's some quotes from the Living Legend.</h2>
+                <p>Disclaimer: I didn't interview Vettel personally and asked him about his quotes. I pulled these from <a href="https://brainyquote.com">brainyquote.com</a>, so give credits where due.</p>
+                <blockquote class="quote q1" cite="https://www.brainyquote.com/quotes/sebastian_vettel_417864">Sometimes you need to hit pause to let everything sink in.</blockquote>
+                <blockquote class="quote q2">I don't care too much what happened in the past. I prefer to focus on what is coming next and I'm really looking forward to it.</blockquote>
+                <blockquote class="quote q3" cite="https://www.brainyquote.com/quotes/sebastian_vettel_417840">There are some things that you can fulfill with money, but at the end of the day, these are not the things that make you happy. It is the small things that make life good.</blockquote>
+                <blockquote class="quote q4" cite="https://www.brainyquote.com/quotes/sebastian_vettel_417859">I don't care what other people think as long as I am happy. The day I die or retire, I have blown all my chances because I don't have the chance any more to change my image as an F1 driver.</blockquote>
+            </section>
+            
+            <hr>
+                <section class="box-container">
+                    <div class="box-message">
+                        <h2>This is a cool template for menus, isn't it?</h2>
+                        <p>Someday, I'll implement it somewhere.</p>
+                        <p>Also, it looks like a certain logo, isn't it? <pre>(^人^)</pre></p>
+                    </div>
+                    <div class="microsoft-logo">
+                        <div class="separator">
+                            <div class="boxes red"><p>Menu text</p></div>
+                            <div class="boxes blue"><p>Menu text</p></div>
+                        </div>
+                        <div class="separator">
+                            <div class="boxes green"><p>Menu text</p></div>
+                            <div class="boxes yellow"><p>Menu text</p></div>
+                        </div>
+                    </div>
+                </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <hr>
+        <p>Made by Klrfl, 2021. All rights reserved.</p>
+    </footer>
+    
+    <!--JS link-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c238d9165e.js" crossorigin="anonymous"></script>
+</body>
+</html>

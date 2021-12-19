@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Sidebar | About</title>
+    
+    <!--CSS link-->
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+    
+    
+</head>
+<body>
+    <nav id="sidebar">
+        <section class="top">
+            <a id="homebtn" href="home.html"><i class="fa fa-warehouse"></i></a>
+            <h2>WAREHOUSE</h2>
+            <button id="closebtn" onclick="closeNav()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </section>
+        
+        <hr>
+        
+        <section class="bottom">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="blog.html">My Blog</a>
+                <a href="work.html">See My Work</a>
+                <a href="donate.html" class="donate">Buy me a Coffee</a>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Made by Klrfl, 2021. All rights reserved.</p>
+            </div>
+        </section>
+    </nav>
+    
+    <header>
+        <button id="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="input-container">
+            <button class="searchbtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search..">
+        </div>
+        <a href="home.html"><i class="fas fa-warehouse"></i></a>
+    </header>
+    <main>
+        <article>
+            <Section>
+                <h2>Who are you?</h2>
+                <p>I am an aspiring front-end web developer (maybe full stack in the future too) and an avid motorsport fan. I also edit on Wikipedia under the name Klrfl on <a href="https://id.wikipedia.org">Wikipedia Indonesia</a>, but I edit only when I have free time.</p>
+
+                <h2>Where are you?</h2>
+                <p>I'm in Indonesia, a wonderful country full of idiots.</p>
+
+                <h2>Why are you making this?</h2>
+                <p>I'm currently learning HTML, CSS, and JS. I need a project to apply the things I learned about and to practice on, so I made this 'website'. Maybe someday I'll make a fully working website dedicated to Sebastian.</p>
+                <p>Note that I am not a beginner, so any constructive criticism is welcome!</p>
+
+                <h2>Why is there Sebastian Vettel on the landing page?</h2>
+                <p>because I like him. I also need to practice on images.</p>
+            </Section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <p>Made by Klrfl, 2021. All rights reserved.</p>
+    </footer>
+
+    <!--JS link-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c238d9165e.js" crossorigin="anonymous"></script>
+</body>
+</html>

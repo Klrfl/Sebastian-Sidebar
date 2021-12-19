@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS link-->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <section class="top">
+            <i class="fa fa-warehouse"></i>
+            <h2>WAREHOUSE</h2>
+            <button id="closebtn" onclick="closeNav()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </section>
+        
+        <hr>
+        
+        <section class="bottom">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="blog.html" class="active">My Blog</a>
+                <a href="work.html">See My Work</a>
+                <a href="donate.html" class="donate">Buy me a Coffee</a>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Made by Klrfl, 2021. All rights reserved.</p>
+            </div>
+        </section>
+    </nav>
+
+    
+    <header>
+        <button id="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="input-container">
+            <button class="searchbtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search..">
+        </div>
+        <i class="fas fa-warehouse"></i>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Hello.</h2>
+                <p>I'm practicing with layouting. There's no actual blogs here lmao</p>
+            </section>
+            <section class="popular-posts carousel">
+                <div class="carousel--item"></div>
+                <div class="carousel--item"></div>
+                <div class="carousel--item"></div>
+            </section>
+            <section>
+                <h2>Recent Posts</h2>
+                <p>Newer posts on top.</p>
+            </section>
+
+            <section class="post-container">
+                <div class="post">
+                    <div class="post-header">
+                        <h3>just a Post Title</h3>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum hic animi quidem neque error enim similique consequatur.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">How To</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>just a Post Title</h3>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum hic animi quidem neque error enim similique consequatur.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">Tips & Tricks</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Post Title</h3>
+                        <p class="date">17 November 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Post Title</h3>
+                        <p class="date">15 November 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">News</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>I promise you, this is definitely going to be the longest post title</h3>
+                        <p class="date">10 November 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">Cheat Sheet</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>a title that's a little bit long</h3>
+                        <p class="date">9 November 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">List</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Post Title</h3>
+                        <p class="date">9 November 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">How to</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Post Title</h3>
+                        <p class="date">27 September 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, distinctio?</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">How to</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Newest ones on top</h3>
+                        <p class="date">25 September 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur natus dolore quibusdam.</p>
+                    </div>
+                    <div class="flair-container">
+                        <div class="flair">Tips & Tricks</div>
+                        <div class="flair">How to</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p class="date">10 September 2021</p>
+                    </div>
+                    <div class="post-preview">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit sunt officia esse laudantium nobis.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <hr>
+        <p>Made by Klrfl, 2021. All rights reserved.</p>
+    </footer>
+
+    <!--JS link-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c238d9165e.js" crossorigin="anonymous"></script>
+</body>
+</html>

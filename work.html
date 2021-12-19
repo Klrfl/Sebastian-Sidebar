@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Sidebar | Contact</title>
+    
+    <!--CSS link-->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <section class="top">
+            <i class="fa fa-warehouse"></i>
+            <h2>WAREHOUSE</h2>
+            <button id="closebtn" onclick="closeNav()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </section>
+        
+        <hr>
+        
+        <section class="bottom">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="work.html" class="active">See My Work</a>
+                <a href="donate.html" class="donate">Buy me a Coffee</a>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Made by Klrfl, 2021. All rights reserved.</p>
+            </div>
+        </section>
+    </nav>
+
+    
+    <header>
+        <button id="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="input-container">
+            <button class="searchbtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search..">
+        </div>
+        <i class="fas fa-warehouse"></i>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Check out these pens!</h2>
+                <p>You can check out these pens I made on CodePen and provide feedback. Maybe even teach me a thing or two about web dev!</p>
+            </section>
+            <!--pens-->
+            <section class="pen">
+            <!--first iframe-->
+                <iframe scrolling="no" src="https://codepen.io/Klrfl/embed/VwWBOoK?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/Klrfl/pen/VwWBOoK">
+                    Wanted to make a Navbar, and a Go To Top Button</a> by Efraim Munthe (<a href="https://codepen.io/Klrfl">@Klrfl</a>) on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+                        
+            <!--second iframe-->
+                <iframe scrolling="no" src="https://codepen.io/Klrfl/embed/eYEBLgJ?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/Klrfl/pen/eYEBLgJ">
+                    Wanted to make Hover FXs</a> by Efraim Munthe (<a href="https://codepen.io/Klrfl">@Klrfl</a>) on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <hr>
+        <p>Made by Klrfl, 2021. All rights reserved.</p>
+    </footer>
+
+    <!--JS link-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c238d9165e.js" crossorigin="anonymous"></script>
+</body>
+</html>
