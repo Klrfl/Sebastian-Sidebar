@@ -110,6 +110,7 @@ nav .links {
 }
 
 nav .links a {
+  position: relative;
   border-radius: 0 2em 2em 0;
   padding: 1em;
   color: #bbb;
@@ -118,16 +119,42 @@ nav .links a {
   transition: 300ms ease;
 }
 
+nav .links a::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
 nav .links a.active {
   background: #505050;
-  border-left: 3px solid #40c728;
+}
+
+nav .links a.active::before {
+  background: #40c728;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 nav .links a:hover {
   background: #464646;
-  border-left: 3px solid #c4251a;
   padding-left: 1.5em;
   color: #fff;
+}
+
+nav .links a:hover::before {
+  background: #c4251a;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 nav .links a.donate {

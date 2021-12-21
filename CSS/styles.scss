@@ -98,22 +98,47 @@ nav{
         flex-direction: column;
         
         a{
+            position: relative;
             border-radius: 0 2em 2em 0;
             padding: 1em;
             color: $nav-font-color;
             text-decoration: none;
             transition: $transition;
             
-            &.active{
-                background: rgb(80, 80, 80);
-                border-left: 3px solid rgb(64, 199, 40);
+            //hover effect
+            &::before{
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: $transition; 
             }
 
+            &.active{
+                background: rgb(80, 80, 80);
+                
+                &::before{
+                    background: rgb(64, 199, 40);
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            //hover effect toggle
             &:hover{
                 background: $nav-backcol-hover;
-                border-left: 3px solid rgb(196, 37, 26);
                 padding-left: 1.5em; 
                 color: #fff;
+
+                &::before{
+                    background: rgb(196, 37, 26);
+                    transform: translateX(0);
+                    opacity: 1;
+                }
             }
 
             &.donate{
