@@ -86,7 +86,7 @@ nav .top button {
 }
 
 nav hr {
-  width: 100%;
+  min-width: 100%;
 }
 
 nav .bottom {
@@ -586,6 +586,9 @@ footer {
 @media screen and (max-width: 750px) {
   #sidebar {
     width: 100%;
+  }
+  #sidebar hr {
+    min-width: 80%;
   }
   #sidebar .links {
     max-width: 90%;
