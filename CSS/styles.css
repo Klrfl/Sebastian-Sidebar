@@ -46,7 +46,6 @@ nav {
   position: fixed;
   width: 350px;
   height: 100vh;
-  padding: 0 1em;
   font-size: 1.1rem;
   color: #bbb;
   -webkit-transform: translate(-100%);
@@ -65,6 +64,7 @@ nav .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #646464;
 }
 
 nav .top i {
@@ -107,6 +107,7 @@ nav .links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 1em;
 }
 
 nav .links a {
@@ -589,9 +590,6 @@ footer {
   }
   #sidebar hr {
     min-width: 80%;
-  }
-  #sidebar .links {
-    max-width: 90%;
   }
   main article {
     max-width: 85vw;

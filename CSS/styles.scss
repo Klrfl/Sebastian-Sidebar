@@ -53,7 +53,6 @@ nav{
     position: fixed;
     width: 350px;
     height: 100vh;
-    padding: 0 1em;
     font-size: 1.1rem;
     color: $nav-font-color;
     transform: translate(-100%);
@@ -64,6 +63,7 @@ nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        background:rgb(100, 100, 100);
         
         i{
             font-size: 1.5em;
@@ -96,6 +96,7 @@ nav{
     .links{
         display: flex;
         flex-direction: column;
+        padding-right: 1em;
         
         a{
             position: relative;
@@ -512,9 +513,6 @@ footer{
             min-width: 80%;
         }
         
-        .links{
-            max-width: 90%;
-        }
     }
     
     main{
