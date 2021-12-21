@@ -164,6 +164,10 @@ nav .links a.donate {
   text-align: center;
 }
 
+nav .links a.donate::before {
+  display: none;
+}
+
 nav .links a.donate:hover {
   border: 3px solid #c4251a;
   padding: 1em;

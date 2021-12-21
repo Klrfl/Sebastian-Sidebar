@@ -146,7 +146,11 @@ nav{
                 border-radius: 2em;
                 margin: 1em 0;
                 text-align: center;
-
+                
+                &::before{
+                    display: none;
+                }
+                
                 &:hover{
                     border: 3px solid rgb(196, 37, 26);
                     padding: 1em;
