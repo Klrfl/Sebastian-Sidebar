@@ -97,6 +97,7 @@ nav .bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 1em;
 }
 
 nav .links {
