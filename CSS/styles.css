@@ -161,7 +161,7 @@ nav .links a:hover::before {
 nav .links a.donate {
   border: 3px solid #40c728;
   border-radius: 2em;
-  margin: 1em 0;
+  margin: 1em 0 0 1em;
   text-align: center;
 }
 
@@ -590,6 +590,12 @@ footer {
   }
   #sidebar hr {
     min-width: 80%;
+  }
+  #sidebar .links {
+    padding: 0;
+  }
+  #sidebar .links a.donate {
+    margin: 1em;
   }
   main article {
     max-width: 85vw;

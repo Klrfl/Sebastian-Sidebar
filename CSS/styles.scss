@@ -145,7 +145,7 @@ nav{
             &.donate{
                 border: 3px solid rgb(64, 199, 40);
                 border-radius: 2em;
-                margin: 1em 0;
+                margin: 1em 0 0 1em;
                 text-align: center;
                 
                 &::before{
@@ -512,7 +512,15 @@ footer{
         hr{
             min-width: 80%;
         }
-        
+        .links{
+            padding: 0;
+
+            a{
+                &.donate{
+                    margin: 1em;
+                }
+        }
+        }
     }
     
     main{
