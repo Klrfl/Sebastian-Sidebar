@@ -1,2 +1,2 @@
 # Sebastian-Sidebar
-I made this so I can practice making a whole website. I named it sidebar because I like making sidebars :)
+This is my OG website, but using a side navbar. I made this so I can practice making a whole website. I like making sidebars :)
