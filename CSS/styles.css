@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb:active {
 
 nav {
   background-color: #5a5a5a;
-  border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5rem 0.5rem 0;
   position: fixed;
   width: 350px;
   height: 100vh;
@@ -97,7 +97,6 @@ nav .bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1em;
 }
 
 nav .links {
@@ -108,6 +107,7 @@ nav .links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 1em 0;
   padding-right: 1em;
 }
 
@@ -187,7 +187,7 @@ nav .links a.donate.active {
 
 header {
   background: #5a5a5a;
-  border-radius: 0 0 0.25em 0.25em;
+  border-radius: 0 0 0.25rem 0.25rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -592,9 +592,6 @@ footer {
   }
   #sidebar hr {
     min-width: 80%;
-  }
-  #sidebar .links {
-    padding: 0;
   }
   #sidebar .links a.donate {
     margin: 1em;
