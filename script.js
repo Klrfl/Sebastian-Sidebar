@@ -27,9 +27,9 @@ window.onscroll = function(){
 
 function scrollAppear(){
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){ //disappear on very top
-        goToTop.style.display = 'block';
+        goToTop.style.opacity = '1';
     } else{ //appear on scroll
-        goToTop.style.display = 'none';
+        goToTop.style.opacity = '0';
     };
 };
 

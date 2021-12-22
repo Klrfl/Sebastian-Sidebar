@@ -288,6 +288,8 @@ main article h2 {
   width: 3em;
   height: 5em;
   color: white;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
   cursor: pointer;
 }
 
