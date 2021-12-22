@@ -593,6 +593,9 @@ footer {
   #sidebar hr {
     min-width: 80%;
   }
+  #sidebar .links {
+    padding: 0;
+  }
   #sidebar .links a.donate {
     margin: 1em;
   }
