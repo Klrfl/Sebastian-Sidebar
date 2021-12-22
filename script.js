@@ -19,4 +19,24 @@ function closeNav(){
     overlay.style.zIndex = '0';
 }
 
-//popular posts carousel (nanti ya, menghadiri acara ga penting dulu di metland mall)
+//goToTop
+let goToTop = document.getElementById('goToTop'); 
+window.onscroll = function(){
+    scrollAppear();
+};
+
+function scrollAppear(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){ //disappear on very top
+        goToTop.style.display = 'block';
+    } else{ //appear on scroll
+        goToTop.style.display = 'none';
+    };
+};
+
+goToTop.addEventListener('click', function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+});

@@ -250,10 +250,23 @@ main{
 
         h2{
             color: rgb(223, 11, 11);
-        }
-        
+        }       
     }
+}
 
+//top btn
+#goToTop{
+    // display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    background:rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 1em 0 0 1em;
+    width: 3em;
+    height: 5em;
+    color: white;
+    cursor: pointer;
 }
 
 //home.html and basic styling
@@ -516,7 +529,7 @@ footer{
         }
         .links{
             padding: 0;
-            
+
             a{
                 &.donate{
                     margin: 1em;
