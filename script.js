@@ -1,25 +1,22 @@
-//navigation
-let nav = document.querySelector('nav');
-let overlay = document.getElementById('overlay');
+let nav = document.getElementById('sidebar');
+let openbtn = document.getElementById('openbtn');
+let closebtn = document.getElementById('closebtn');
+//let overlay = document.getElementById('overlay');
 
+//navigation
 //openNav
-function openNav(){
+openbtn.addEventListener('click', function(){
     nav.style.transform = 'translate(0)';
     nav.style.boxShadow = '5px 0px 15px rgba(0, 0, 0, 0.5)';
-    //toggle overlay
-    overlay.style.background = 'rgba(0, 0, 0, 0.5)';
-    overlay.style.zIndex = '2';
-}
+})
 
 //closeNav
-function closeNav(){
+closebtn.addEventListener('click', function() {
     nav.style.transform = 'translate(-100%)';
     nav.style.boxShadow = '0px 0px 0px #222';
-    //close overlay
-    overlay.style.zIndex = '0';
-}
+})
 
-//goToTop
+//goToTop btn
 let goToTop = document.getElementById('goToTop'); 
 window.onscroll = function(){
     scrollAppear();
