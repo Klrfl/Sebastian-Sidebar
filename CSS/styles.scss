@@ -533,7 +533,9 @@ footer{
             padding: 0;
 
             a{
+                border-radius: 0;
                 &.donate{
+                    border-radius: 2em;
                     margin: 1em;
                 }
         }

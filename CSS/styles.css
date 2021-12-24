@@ -612,7 +612,11 @@ footer {
   #sidebar .links {
     padding: 0;
   }
+  #sidebar .links a {
+    border-radius: 0;
+  }
   #sidebar .links a.donate {
+    border-radius: 2em;
     margin: 1em;
   }
   main article {
