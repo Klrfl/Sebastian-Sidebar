@@ -47,7 +47,7 @@ $nav-backcol-hover: rgb(70, 70, 70);
 $link-transition: color 100ms ease;
 $transition: 300ms ease;
 
-nav{
+#sidebar{
     background-color: $nav-backcol;
     border-radius: 0 0.5rem 0.5rem 0;
     position: fixed;
@@ -58,6 +58,7 @@ nav{
     transform: translate(-100%);
     transition: $transition;
     z-index: 3;
+    overflow: hidden;
 
     .top{
         display: flex;
