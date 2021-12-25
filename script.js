@@ -1,19 +1,35 @@
 let nav = document.getElementById('sidebar');
 let openbtn = document.getElementById('openbtn');
 let closebtn = document.getElementById('closebtn');
-//let overlay = document.getElementById('overlay');
+let overlay = document.getElementById('overlay');
 
 //navigation
 //openNav
-openbtn.addEventListener('click', function(){
+openbtn.addEventListener('click', () => {
     nav.style.transform = 'translate(0)';
     nav.style.boxShadow = '5px 0px 15px rgba(0, 0, 0, 0.5)';
+    
+    //overlay toggle
+    overlay.style.zIndex = '2';
+    overlay.style.opacity = '1';
 })
 
 //closeNav
-closebtn.addEventListener('click', function() {
+closebtn.addEventListener('click', () => {
     nav.style.transform = 'translate(-100%)';
     nav.style.boxShadow = '0px 0px 0px #222';
+
+    //overlay off
+    overlay.style.zIndex = '0';
+    overlay.style.opacity = '0';
+})
+
+overlay.addEventListener('click', () => {
+    nav.style.transform = 'translate(-100%)';
+    nav.style.boxShadow = '0px 0px 0px #222';
+
+    overlay.style.zIndex = '0';
+    overlay.style.opacity = '0';
 })
 
 //goToTop btn
