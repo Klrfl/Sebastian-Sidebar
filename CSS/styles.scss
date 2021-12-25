@@ -176,8 +176,14 @@ $transition: 300ms ease;
     }
 }
 
-.content{
-    z-index: 1;
+#overlay{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 0;
+    transition: $transition;
 }
 
 header{
