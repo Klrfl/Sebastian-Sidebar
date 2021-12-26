@@ -179,6 +179,7 @@ $transition: 300ms ease;
 #overlay{
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(.1em);
     width: 100vw;
     height: 100vh;
     z-index: 0;
@@ -260,6 +261,7 @@ main{
     article{
         max-width: 75vw;
         margin: auto;
+        line-height: 1.5em;
 
         h2{
             color: rgb(223, 11, 11);
