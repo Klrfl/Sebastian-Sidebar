@@ -14,7 +14,7 @@
 <body>
     <nav id="sidebar">
         <section class="top">
-            <i class="fa fa-warehouse"></i>
+            <a href="home.html"><i class="fa fa-warehouse"></i></a>
             <h2>WAREHOUSE</h2>
             <button id="closebtn">
                 <i class="fa fa-times-circle"></i>
@@ -29,6 +29,7 @@
                 <a href="blog.html">My Blog</a>
                 <a href="work.html">See My Work</a>
                 <a href="donate.html" class="donate">Buy me a Coffee</a>
+                <a href="account.html" class="donate">Join the family</a>
             </div>
 
             <div class="footer">
@@ -40,16 +41,23 @@
     <div id="overlay"></div>
     
     <header>
-        <button id="openbtn">
-            <i class="fas fa-bars"></i>
-        </button>
+        <div class="left">
+            <button id="openbtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="account">
+                <a href="account.html" class="donate"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+
         <div class="input-container">
             <button class="searchbtn">
                 <i class="fas fa-search"></i>
             </button>
             <input type="text" placeholder="Search..">
         </div>
-        <i class="fas fa-warehouse"></i>
+        
+        <a href="home.html"><i class="fas fa-warehouse"></i></a>
     </header>
     <main>
         <button id="goToTop" onclick="goToTop()">

@@ -201,13 +201,18 @@ header{
     z-index: 2;
     
     i{
-        font-size: 1.5em;
+        font-size: 1.4em;
         color: $nav-font-color;
         transition: $transition;
         
         &:hover{
             color: $nav-font-color-hover;
         }
+    }
+    
+    .left{
+        display: flex;
+        justify-content: space-between;
     }
 
     #openbtn{
@@ -550,7 +555,7 @@ footer{
                 border-radius: 0;
                 &.donate{
                     border-radius: 2em;
-                    margin: 1em;
+                    margin: 0.5em;
                 }
         }
         }
@@ -580,7 +585,7 @@ footer{
 @media screen and (max-width: 576px){
 
     header{
-        padding: 0.8em;
+        padding: 0.6em;
     }
     main{
         article{

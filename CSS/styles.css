@@ -226,7 +226,7 @@ header {
 }
 
 header i {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #bbb;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
@@ -234,6 +234,15 @@ header i {
 
 header i:hover {
   color: #fff;
+}
+
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header #openbtn {
@@ -635,7 +644,7 @@ footer {
   }
   #sidebar .links a.donate {
     border-radius: 2em;
-    margin: 1em;
+    margin: 0.5em;
   }
   main article {
     max-width: 85vw;
@@ -665,7 +674,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   header {
-    padding: 0.8em;
+    padding: 0.6em;
   }
   main article {
     max-width: 90vw;
