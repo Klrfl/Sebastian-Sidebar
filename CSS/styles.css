@@ -190,6 +190,19 @@ body::-webkit-scrollbar-thumb:active {
   border: 3px solid #40c728;
 }
 
+#sidebar .links .special-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.6);
