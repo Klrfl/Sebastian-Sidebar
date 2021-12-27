@@ -171,7 +171,7 @@ body::-webkit-scrollbar-thumb:active {
 #sidebar .links a.donate {
   border: 3px solid #40c728;
   border-radius: 2em;
-  margin: 1em 0 0 1em;
+  margin: 0.5em 0;
   text-align: center;
 }
 
@@ -201,6 +201,7 @@ body::-webkit-scrollbar-thumb:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 1em;
 }
 
 #overlay {
@@ -657,7 +658,9 @@ footer {
   }
   #sidebar .links a.donate {
     border-radius: 2em;
-    margin: 0.5em;
+  }
+  #sidebar .links .special-cta {
+    margin: 0 1em;
   }
   main article {
     max-width: 85vw;
