@@ -10,6 +10,7 @@ openbtn.addEventListener("click", () => {
   nav.style.boxShadow = "5px 0px 15px rgba(0, 0, 0, 0.5)";
 
   //overlay toggle
+  overlay.style.height = '100vh';
   overlay.style.zIndex = "2";
   overlay.style.opacity = "1";
 });
@@ -20,6 +21,7 @@ closebtn.addEventListener("click", () => {
   nav.style.boxShadow = "0px 0px 0px #222";
 
   //overlay off
+  overlay.style.height = '0';
   overlay.style.zIndex = "0";
   overlay.style.opacity = "0";
 });

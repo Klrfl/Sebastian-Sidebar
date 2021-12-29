@@ -50,10 +50,12 @@ body::-webkit-scrollbar-thumb:active {
   color: #bbb;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
   z-index: 3;
   overflow: hidden;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
 #sidebar .top {
@@ -72,8 +74,8 @@ body::-webkit-scrollbar-thumb:active {
 #sidebar .top i {
   font-size: 1.5em;
   color: #bbb;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
 }
 
 #sidebar .top i:hover {
@@ -206,15 +208,16 @@ body::-webkit-scrollbar-thumb:active {
 
 #overlay {
   position: fixed;
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(0.1em);
           backdrop-filter: blur(0.1em);
   width: 100vw;
-  height: 100vh;
+  height: 0;
   z-index: 0;
   opacity: 0;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
 }
 
 header {

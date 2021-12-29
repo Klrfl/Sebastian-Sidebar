@@ -56,9 +56,9 @@ $transition: 300ms ease;
     font-size: 1.1rem;
     color: $nav-font-color;
     transform: translate(-100%);
-    transition: $transition;
     z-index: 3;
     overflow: hidden;
+    transition: transform $transition;
 
     .top{
         display: flex;
@@ -70,7 +70,7 @@ $transition: 300ms ease;
         i{
             font-size: 1.5em;
             color: $nav-font-color;
-            transition: $transition;
+            transition: color $transition;
             
             &:hover{
                 color: white;
@@ -184,13 +184,14 @@ $transition: 300ms ease;
 
 #overlay{
     position: fixed;
+    inset: 0;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(.1em);
     width: 100vw;
-    height: 100vh;
+    height: 0;
     z-index: 0;
     opacity: 0;
-    transition: $transition;
+    transition: opacity $transition;
 }
 
 header{
