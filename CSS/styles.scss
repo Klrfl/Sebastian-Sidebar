@@ -106,9 +106,12 @@ $transition: 300ms ease;
             padding: 1em;
             color: $nav-font-color;
             text-decoration: none;
-            transition: $transition;
+            transition:
+            background-color $transition,
+            padding $transition,
+            color $transition;
             
-            //border
+            //hover effect
             &::before{
                 content: '';
                 position: absolute;
@@ -118,7 +121,9 @@ $transition: 300ms ease;
                 left: 0;
                 transform: translateX(-100%);
                 opacity: 0;
-                transition: $transition;
+                transition:
+                transform $transition,
+                opacity $transition;
                 
                 @media screen and (max-width: 750px) {
                     width: 100%;
@@ -210,7 +215,7 @@ header{
     i{
         font-size: 1.4em;
         color: $nav-font-color;
-        transition: $transition;
+        transition: color $transition;
         
         &:hover{
             color: $nav-font-color-hover;
@@ -294,7 +299,7 @@ main{
     width: 3em;
     height: 5em;
     color: white;
-    transition: $transition;
+    transition: opacity $transition;
     cursor: pointer;
 }
 
@@ -318,7 +323,7 @@ main{
     border-radius: 0 0.5em 0.5em 0;
     padding: 1em;
     box-shadow: 8px 8px 20px -4px #222;
-    transition: $transition;
+    transition: transform $transition;
 
     &:hover{
         transform: translateX(10px);
@@ -348,7 +353,9 @@ main{
         min-width: 150px;
         min-height: 150px;
         opacity: 0.9;
-        transition: $transition;
+        transition:
+        transform $transition,
+        opacity $transition;
 
         &:hover{
             transform: translateY(-10px);
@@ -421,7 +428,9 @@ footer{
         margin: 0 1em;
         padding: 0 1em;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-        transition: $transition;
+        transition:
+        transform $transition,
+        box-shadow $transition;
 
         &:hover{
             transform: translateY(-10px);
