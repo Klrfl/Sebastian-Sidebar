@@ -376,52 +376,53 @@ main article h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2em 0;
+  margin-block: 2em;
+}
+
+.box-container .box-message {
+  padding: 0.5em;
 }
 
 .box-container .microsoft-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-.box-container .separator {
-  margin: 0.25em;
-}
-
-.box-container .separator .boxes {
+.box-container .boxes {
   border: 3px solid black;
   display: -ms-grid;
   display: grid;
   place-items: center;
   min-width: 150px;
   min-height: 150px;
-  margin: 0.5em 0;
   opacity: 0.9;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
 }
 
-.box-container .separator .boxes:hover {
+.box-container .boxes:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   opacity: 1;
   cursor: pointer;
 }
 
-.box-container .separator .red {
+.box-container .red {
   background: #f65022;
 }
 
-.box-container .separator .green {
+.box-container .green {
   background: #7fba00;
 }
 
-.box-container .separator .blue {
+.box-container .blue {
   background: #00a4f0;
 }
 
-.box-container .separator .yellow {
+.box-container .yellow {
   background: #ffbb00;
 }
 
