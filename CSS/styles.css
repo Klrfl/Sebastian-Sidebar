@@ -599,17 +599,11 @@ footer {
 }
 
 .post-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
   width: 100%;
   margin: 2em 0;
 }
@@ -617,8 +611,6 @@ footer {
 .post {
   border: 1px solid black;
   border-radius: 0.5em;
-  width: 40%;
-  margin: 0.5em;
   padding: 0.5em;
   overflow: hidden;
 }
@@ -697,6 +689,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .post-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
