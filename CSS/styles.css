@@ -325,6 +325,13 @@ main article h2 {
   color: #df0b0b;
 }
 
+.container {
+  background: gainsboro;
+  border-radius: 0.5em;
+  margin: 2em 0;
+  padding: 1em;
+}
+
 #goToTop {
   position: fixed;
   bottom: 10%;
@@ -521,13 +528,6 @@ footer {
 
 .donate-container .donate-box i {
   font-size: 2em;
-}
-
-.contact {
-  background: gainsboro;
-  border-radius: 0.5em;
-  margin: 2em 0;
-  padding: 1em;
 }
 
 .contact a {

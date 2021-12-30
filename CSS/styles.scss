@@ -288,6 +288,13 @@ main{
     }
 }
 
+.container{
+    background: rgb(220, 220, 220);
+    border-radius: 0.5em;
+    margin: 2em 0;
+    padding: 1em;
+}
+
 //top btn
 #goToTop{
     // display: none;
@@ -447,11 +454,6 @@ footer{
 
 //contact.html
 .contact{
-    background: rgb(220, 220, 220);
-    border-radius: 0.5em;
-    margin: 2em 0;
-    padding: 1em;
-    
     a{
         color: black;
         text-decoration: none;
