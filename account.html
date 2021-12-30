@@ -29,27 +29,37 @@
     </button>
     
     <article>
-      <section>
-        <h2>Hey.</h2>
-        <p>Welcome to the account setup page. It's still barebones now, but I promise it will come together very very soon.</p>
-      </section>
-      
-      <section>
-        <h2>"it's still barebones now.."</h2>
-        <p>Here is some text to act as a padding, so it feels full.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae dolorum nisi. Consequatur consequuntur sequi debitis possimus autem tempore explicabo natus similique alias assumenda eum culpa delectus, in dignissimos. Odit porro laborum voluptatibus expedita eos, eveniet nesciunt aliquid perferendis beatae cupiditate. Soluta architecto delectus atque alias impedit consequuntur, maxime facilis nesciunt nisi corporis eos aspernatur laborum fugiat.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil porro optio! Officia incidunt, dolorum nam accusamus perferendis qui laboriosam nisi distinctio, itaque eveniet exercitationem animi. Corrupti numquam obcaecati, mollitia harum eum, minus ea totam odit, hic reprehenderit dolore esse tempore nesciunt rem. Ipsam, facilis.</p>
-      </section>
-
-      <section>
-        <div class="container">
+      <h2>Make an Account</h2>
+      <p>Make a new account.</p>
+      <p>Note that I want to practice using form elements. I don't collect personal data, as I don't even have a server. </p>
+      <div class="form-container container">
+          <!--form-->
           <form>
-            <label for="username">Your Username</label>
-            <input id="username" type="text" placeholder="here is an input tag.">
+              <div class="form-field">
+                  <label for="fname">First Name</label>
+                  <input name="fname" type="text" placeholder="Type Here..">
+              </div>
+              <div class="form-field">
+                  <label for="lname">Last Name</label>
+                  <input name="lname" type="text" placeholder="Type here..">
+              </div>
+              <div class="form-field">
+                  <label for="pass">Type in your Password</label>
+                  <input name="pass" type="password" placeholder="Type here..">
+              </div>
+              <div class="submit">
+                  <button name="submit">Register</button>
+              </div>
+
+              <div class="account-cta">
+                  <p>
+                      <a href="account.html">If you already have an account, go here!</a>
+                  </p>
+              </div>
           </form>
-        </div>
-      </section>
-    </article>
+          <!--end of form-->
+      </div>
+  </article>
   
   </main>
 
