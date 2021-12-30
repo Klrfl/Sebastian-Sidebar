@@ -283,7 +283,7 @@ main{
 }
 
 .container{
-    background: rgb(220, 220, 220);
+    background: rgb(230, 230, 230);
     border-radius: 0.5em;
     margin: 2em 0;
     padding: 1em;
@@ -550,6 +550,55 @@ footer{
     padding: 0.5em;
     font-size: 0.8em;
 }
+
+//account.html form
+.form-container{
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    
+        padding: 1em;
+
+        &:first-child{
+            border-radius: .5em .5em 0 0;
+        }
+        
+        &:nth-child(3){
+            border-radius: 0 0 .5em .5em;
+        }
+
+        &:hover{
+            background: rgb(210, 210, 210);
+        }
+    
+        input{
+            margin-block: 0.25em;
+            padding: .5em;
+        }
+    }
+
+    .submit{
+        margin-block: 1.5em;
+        text-align: center;
+        
+        button{
+            background: dodgerblue;
+            border: none;
+            border-radius: 1em;
+            color: white;
+            margin: auto;
+            padding: 1.5em;
+            cursor: pointer;
+        }
+    }
+
+    .account-cta{
+        text-align: center;
+    }
+}
+
 
 //media query
 @media screen and (max-width: 750px){

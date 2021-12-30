@@ -327,7 +327,7 @@ main article h2 {
 }
 
 .container {
-  background: gainsboro;
+  background: #e6e6e6;
   border-radius: 0.5em;
   margin: 2em 0;
   padding: 1em;
@@ -646,6 +646,59 @@ footer {
   margin: 0 0.25em;
   padding: 0.5em;
   font-size: 0.8em;
+}
+
+.form-container .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 1em;
+}
+
+.form-container .form-field:first-child {
+  border-radius: .5em .5em 0 0;
+}
+
+.form-container .form-field:nth-child(3) {
+  border-radius: 0 0 .5em .5em;
+}
+
+.form-container .form-field:hover {
+  background: #d2d2d2;
+}
+
+.form-container .form-field input {
+  margin-block: 0.25em;
+  padding: .5em;
+}
+
+.form-container .submit {
+  margin-block: 1.5em;
+  text-align: center;
+}
+
+.form-container .submit button {
+  background: dodgerblue;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  margin: auto;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+.form-container .account-cta {
+  text-align: center;
 }
 
 @media screen and (max-width: 750px) {
