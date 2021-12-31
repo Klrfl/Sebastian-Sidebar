@@ -40,18 +40,24 @@
     <div id="overlay"></div>
     
     <header>
-        <button id="openbtn" onclick="openNav()">
-            <i class="fas fa-bars"></i>
-        </button>
+        <div class="left">
+            <button id="openbtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="account">
+                <a href="account.html" class="donate"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+
         <div class="input-container">
             <button class="searchbtn">
                 <i class="fas fa-search"></i>
             </button>
             <input type="text" placeholder="Search..">
         </div>
-        <i class="fas fa-warehouse"></i>
+        
+        <a href="home.html"><i class="fas fa-warehouse"></i></a>
     </header>
-
     <main>
         <button id="goToTop" onclick="goToTop()">
             <i class="fas fa-arrow-up"></i>
