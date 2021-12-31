@@ -192,7 +192,7 @@ body::-webkit-scrollbar-thumb:active {
 
 #sidebar .links a.donate.active {
   border-radius: 2em;
-  border: 3px solid #40c728;
+  border: 3px solid #c4251a;
 }
 
 #sidebar .links .special-cta {
