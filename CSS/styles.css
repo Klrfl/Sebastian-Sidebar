@@ -316,6 +316,10 @@ header .input-container input:focus-visible {
   outline: none;
 }
 
+main {
+  margin-bottom: 150px;
+}
+
 main article {
   max-width: 75vw;
   margin: auto;
@@ -446,7 +450,7 @@ main article h2 {
 footer {
   position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 1px;
   padding: 1em;
 }
 
