@@ -1,8 +1,18 @@
-$color-scheme: (
+$nav-color-scheme: (
   'font-color': #bbb,
   'font-color-hover': #fff,
   'nav-backcol': rgb(90, 90, 90),
-  'nav-backcol-hover': rgb(70, 70, 70),
+  'nav-backcol-hover': rgb(70, 70, 70)
+);
+
+$main-color-scheme: (
+  'font-color': #222,
+  'h2-font-color': rgb(223, 11, 11)
+);
+
+$dark-color-scheme: (
+  'font-color': #ddd,
+  'h2-font-color': rgb(177, 11, 11)
 );
 
 $link-transition: color 100ms ease;

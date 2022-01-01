@@ -317,6 +317,7 @@ header .input-container input:focus-visible {
 }
 
 main {
+  color: #222;
   margin-bottom: 150px;
 }
 

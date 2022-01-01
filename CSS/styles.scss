@@ -33,13 +33,13 @@ body::-webkit-scrollbar-thumb:active{
 
 //sidebar
 #sidebar{
-    background-color: map-get($color-scheme, nav-backcol);
+    background-color: map-get($nav-color-scheme, nav-backcol);
     border-radius: 0 0.5rem 0.5rem 0;
     position: fixed;
     width: 350px;
     height: 100vh;
     font-size: 1.1rem;
-    color: map-get($color-scheme, font-color);
+    color: map-get($nav-color-scheme, font-color);
     transform: translate(-100%);
     z-index: 3;
     overflow: hidden;
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb:active{
         
         i{
             font-size: 1.5em;
-            color: map-get($color-scheme, font-color);
+            color: map-get($nav-color-scheme, font-color);
             transition: color $transition;
             
             &:hover{
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb:active{
             position: relative;
             border-radius: 0 2em 2em 0;
             padding: 1em;
-            color: map-get($color-scheme, font-color);
+            color: map-get($nav-color-scheme, font-color);
             text-decoration: none;
             transition:
             background-color $transition,
@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb:active{
             
             //hover effect toggle
             &:hover{
-                background: map-get($color-scheme, nav-backcol-hover);
+                background: map-get($nav-color-scheme, nav-backcol-hover);
                 padding-left: 1.5em; 
                 color: #fff;
 
@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb:active{
                 &:hover{
                     border: 3px solid rgb(196, 37, 26);
                     padding: 1em;
-                    color: map-get($color-scheme, font-color-hover);
+                    color: map-get($nav-color-scheme, font-color-hover);
                 }
 
                 &.active{
@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 header{
-    background: map-get($color-scheme, nav-backcol);
+    background: map-get($nav-color-scheme, nav-backcol);
     border-radius: 0 0 0.25rem 0.25rem;
     position: sticky;
     top: 0;
@@ -199,11 +199,11 @@ header{
     
     i{
         font-size: 1.4em;
-        color: map-get($color-scheme, font-color);
+        color: map-get($nav-color-scheme, font-color);
         transition: color $transition;
         
         &:hover{
-            color: map-get($color-scheme, font-color)-hover;
+            color: map-get($nav-color-scheme, font-color)-hover;
         }
     }
     
@@ -261,6 +261,7 @@ header{
 }
 
 main{
+    color: map-get($main-color-scheme, font-color);
     margin-bottom: 150px;
     article{
         max-width: 75vw;
@@ -268,7 +269,7 @@ main{
         line-height: 1.5em;
 
         h2{
-            color: rgb(223, 11, 11);
+            color: map-get($main-color-scheme, h2-font-color);
         }       
     }
 }
@@ -383,8 +384,8 @@ footer{
 }
 
 .footer{
-    background: map-get($color-scheme, nav-backcol);
-    color: map-get($color-scheme, font-color);
+    background: map-get($nav-color-scheme, nav-backcol);
+    color: map-get($nav-color-scheme, font-color);
     padding: 1em;
 }
 
