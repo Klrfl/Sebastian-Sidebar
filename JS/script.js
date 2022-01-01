@@ -36,6 +36,7 @@ overlay.addEventListener("click", () => {
 
 //goToTop btn
 let goToTop = document.getElementById("goToTop");
+
 window.onscroll = function () {
   scrollAppear();
 };
