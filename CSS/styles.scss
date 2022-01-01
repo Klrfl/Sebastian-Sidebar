@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb:active{
             
             //hover effect toggle
             &:hover{
-                background: map-get($color-scheme, nav-backcol)-hover;
+                background: map-get($color-scheme, nav-backcol-hover);
                 padding-left: 1.5em; 
                 color: #fff;
 
@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb:active{
                 &:hover{
                     border: 3px solid rgb(196, 37, 26);
                     padding: 1em;
-                    color: map-get($color-scheme, font-color);
+                    color: map-get($color-scheme, font-color-hover);
                 }
 
                 &.active{
