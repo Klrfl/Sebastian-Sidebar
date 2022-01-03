@@ -299,14 +299,23 @@ main{
 
 //home.html and basic styling
 .Seb-pic-container{
-    display: flex;
-    justify-content: center;
-    margin: 1em 0;
+    display: grid;
+    grid-template-areas:
+    'seb sf90';
+    gap: 1em;
+    justify-items: center;
     
     img{
         border-radius: 1em;
-        margin: 0.5em;
-        width: 50%;
+        max-width: 100%;
+    }
+
+    img:first-child{
+        grid-area: 'seb';
+    }
+
+    img:nth-child(2){
+        grid-area: 'sf90';
     }
 }
 
@@ -624,11 +633,12 @@ footer{
         }
 
         .Seb-pic-container{
-            flex-direction: column;
-            align-items: center;
+            grid-template-areas:
+            'seb'
+            'sf90';
         
             img{
-                width: 85%;
+                max-width: 85%;
             }
         }
     }
