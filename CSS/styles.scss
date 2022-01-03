@@ -203,7 +203,7 @@ header{
         transition: color $transition;
         
         &:hover{
-            color: map-get($nav-color-scheme, font-color)-hover;
+            color: map-get($nav-color-scheme, font-color-hover);
         }
     }
     
