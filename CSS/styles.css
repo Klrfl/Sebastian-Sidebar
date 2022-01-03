@@ -318,7 +318,6 @@ header .input-container input:focus-visible {
 
 main {
   color: #222;
-  margin-bottom: 150px;
 }
 
 main article {
@@ -454,8 +453,6 @@ main article h2 {
 }
 
 footer {
-  position: fixed;
-  width: 100%;
   bottom: 0;
   padding: 1em;
 }

@@ -262,7 +262,6 @@ header{
 
 main{
     color: map-get($main-color-scheme, font-color);
-    margin-bottom: 150px;
     article{
         max-width: 75vw;
         margin: auto;
@@ -386,8 +385,6 @@ main{
 
 //footer
 footer{
-    position: fixed;
-    width: 100%;
     bottom: 0;
     padding: 1em;
 }
