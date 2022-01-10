@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import './resets', './variables';
 
-//custom freaking scrollbar
+//custom scrollbar
 body::-webkit-scrollbar{
     width: 10px;
 }
@@ -45,15 +45,16 @@ body::-webkit-scrollbar-thumb:active{
     overflow: hidden;
     transition: transform $transition;
 
-    .top{
+    .sidebar__top{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         background:rgb(100, 100, 100);
         margin-bottom: 1em;
+        padding: 1em;
         
         i{
-            font-size: 1.5em;
+            font-size: 1.4em;
             color: map-get($nav-color-scheme, font-color);
             transition: color $transition;
             
@@ -61,6 +62,10 @@ body::-webkit-scrollbar-thumb:active{
                 color: white;
                 cursor: pointer;
             }
+        }
+        
+        h2{
+            margin: 0;
         }
 
         button{
@@ -75,7 +80,7 @@ body::-webkit-scrollbar-thumb:active{
         min-width: 100%;
     }
 
-    .bottom{
+    .sidebar__bottom{
         display: flex;
         flex-direction: column;
     }
@@ -86,17 +91,18 @@ body::-webkit-scrollbar-thumb:active{
         padding-right: 1em;
         
         a{
-            position: relative;
             border-radius: 0 2em 2em 0;
             padding: 1em;
             color: map-get($nav-color-scheme, font-color);
             text-decoration: none;
-            transition:
-            background-color $transition,
-            padding $transition,
-            color $transition;
             
-            //hover effect
+            position: relative;
+            transition:
+            background-color $fast-transition,
+            padding $transition,
+            color $fast-transition;
+            
+            //red and green bar hover effect
             &::before{
                 content: '';
                 position: absolute;
@@ -130,7 +136,7 @@ body::-webkit-scrollbar-thumb:active{
             //hover effect toggle
             &:hover{
                 background: map-get($nav-color-scheme, nav-backcol-hover);
-                padding-left: 1.5em; 
+                padding-inline: 1.5em;
                 color: #fff;
 
                 &::before{
@@ -142,7 +148,7 @@ body::-webkit-scrollbar-thumb:active{
 
             &.donate{
                 border: 3px solid rgb(64, 199, 40);
-                border-radius: 2em;
+                border-radius: 3em;
                 margin: 0.5em 0;
                 text-align: center;
                 
@@ -152,7 +158,6 @@ body::-webkit-scrollbar-thumb:active{
                 
                 &:hover{
                     border: 3px solid rgb(196, 37, 26);
-                    padding: 1em;
                     color: map-get($nav-color-scheme, font-color-hover);
                 }
 
@@ -186,7 +191,7 @@ body::-webkit-scrollbar-thumb:active{
 
 header{
     background: map-get($nav-color-scheme, nav-backcol);
-    border-radius: 0 0 0.25rem 0.25rem;
+    border-radius: 0 0 0.25em 0.25em;
     position: sticky;
     top: 0;
     display: flex;
@@ -194,7 +199,7 @@ header{
     align-items: center;
     padding: 1em;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    opacity: 0.96;
+    opacity: 0.95;
     z-index: 2;
     
     i{
@@ -609,11 +614,13 @@ footer{
         hr{
             min-width: 80%;
         }
+
         .links{
             padding: 0;
 
             a{
                 border-radius: 0;
+                padding: 1.5em;
                 &.donate{
                     border-radius: 2em;
                 }
