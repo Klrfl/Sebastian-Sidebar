@@ -1,3 +1,4 @@
+let body = document.getElementsByTagName('body')[0];
 let nav = document.getElementById("sidebar");
 let openbtn = document.getElementById("openbtn");
 let closebtn = document.getElementById("closebtn");
@@ -13,6 +14,9 @@ openbtn.addEventListener("click", () => {
   overlay.style.height = '100vh';
   overlay.style.zIndex = "2";
   overlay.style.opacity = "1";
+
+  //prevent scroll
+  body.classList.toggle('slide');
 });
 
 //closeNav
@@ -24,6 +28,9 @@ closebtn.addEventListener("click", () => {
   overlay.style.height = '0';
   overlay.style.zIndex = "0";
   overlay.style.opacity = "0";
+
+  //scroll
+  body.classList.toggle('slide');
 });
 
 overlay.addEventListener("click", () => {
