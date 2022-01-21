@@ -253,7 +253,6 @@ header {
 }
 
 header i {
-  font-size: 1.4em;
   color: #bbb;
   -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
@@ -263,7 +262,7 @@ header i:hover {
   color: #fff;
 }
 
-header .left {
+.header__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +271,7 @@ header .left {
           justify-content: space-between;
 }
 
-header #openbtn {
+#openbtn {
   background: inherit;
   border: none;
   margin: none;
@@ -280,47 +279,41 @@ header #openbtn {
   font-size: 1em;
 }
 
-header #openbtn:hover {
+#openbtn:hover {
   cursor: pointer;
 }
 
-header .input-container {
+.input-container form {
+  border-radius: 1em;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-box-shadow 200ms ease;
+  transition: -webkit-box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
 }
 
-header .input-container .searchbtn {
-  background: #000;
+.input-container form:hover {
+  -webkit-box-shadow: 3px 3px 10px -3px #111;
+          box-shadow: 3px 3px 10px -3px #111;
+}
+
+.input-container button {
+  background: #111;
   border: none;
-  height: 2em;
-}
-
-header .input-container .searchbtn i {
-  font-size: 1.1em;
-  color: #aaa;
-}
-
-header .input-container .searchbtn i:hover {
-  color: #ddd;
-}
-
-header .input-container .searchbtn:hover {
+  padding: .5em;
   cursor: pointer;
 }
 
-header .input-container input {
+.input-container input {
   border: none;
-  border-radius: 0 1em 1em 0;
-  height: 1rem;
-  padding: 5px;
-}
-
-header .input-container input:focus-visible {
   outline: none;
+  padding: .5em;
 }
 
 main {

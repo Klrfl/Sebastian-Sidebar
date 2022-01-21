@@ -203,7 +203,6 @@ header{
     z-index: 2;
     
     i{
-        font-size: 1.4em;
         color: map-get($nav-color-scheme, font-color);
         transition: color $transition;
         
@@ -211,57 +210,48 @@ header{
             color: map-get($nav-color-scheme, font-color-hover);
         }
     }
-    
-    .left{
-        display: flex;
-        justify-content: space-between;
-    }
+}
 
-    #openbtn{
-        background: inherit;
-        border: none;
-        margin: none;
-        padding: none;
-        font-size: 1em;
-        
-        &:hover{
-            cursor: pointer;
-        }
-    }
+.header__left{
+    display: flex;
+    justify-content: space-between;
+}
+
+#openbtn{
+    background: inherit;
+    border: none;
+    margin: none;
+    padding: none;
+    font-size: 1em;
     
-    .input-container{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.input-container{
+    form{
+        border-radius: 1em;
+        overflow: hidden;
         display: flex;
         align-items: center;
-        
-        .searchbtn{
-            background: #000;
-            border: none;
-            height: 2em;
-            
-            i{
-                font-size: 1.1em;
-                color: #aaa;
-                
-                &:hover{
-                    color: #ddd;
-                }
-            }
-            
-            &:hover{
-                cursor: pointer;
-            }
+        transition: box-shadow 200ms ease;
+        &:hover{
+            box-shadow: 3px 3px 10px -3px #111;
         }
+    }
+    
+    button{
+        background: #111;
+        border: none;
+        padding: .5em;
+        cursor: pointer;
+    }
 
-        input{
-            border: none;
-            border-radius: 0 1em 1em 0;
-            height: 1rem;
-            padding: 5px;
-
-            &:focus-visible{
-                outline: none;
-            }
-        }
+    input{
+        border: none;
+        outline: none;
+        padding: .5em;
     }
 }
 
@@ -274,7 +264,7 @@ main{
 
         h2{
             color: map-get($main-color-scheme, h2-font-color);
-        }       
+        }
     }
 }
 
