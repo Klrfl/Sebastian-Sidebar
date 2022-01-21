@@ -24,6 +24,10 @@ body::-webkit-scrollbar-thumb:active{
     background-color: rgb(100, 100, 100);
 }
 
+body.slide{
+    overflow: hidden;
+}
+
 //selection
 ::selection{
     background: rgb(140, 140, 140);

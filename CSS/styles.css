@@ -33,6 +33,10 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #646464;
 }
 
+body.slide {
+  overflow: hidden;
+}
+
 ::-moz-selection {
   background: #8c8c8c;
   color: white;
