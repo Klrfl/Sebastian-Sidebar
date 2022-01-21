@@ -39,21 +39,21 @@
     <div id="overlay"></div>
 
     <header>
-        <div class="left">
+        <section class="header__left">
             <button id="openbtn">
                 <i class="fas fa-bars"></i>
             </button>
-        </div>
+            <div class="input-container">
+                <form>
+                    <button class="searchbtn"><i class="fas fa-search"></i></button>
+                    <input type="search" placeholder="Search..">
+                </form>
+            </div>        
+        </section>
 
-        <div class="input-container">
-            <button class="searchbtn">
-                <i class="fas fa-search"></i>
-            </button>
-            <input type="text" placeholder="Search..">
-        
-        </div>
-        
-        <a href="home.html"><i class="fas fa-warehouse"></i></a>
+        <section class="header__right">
+            <a href="home.html"><i class="fas fa-warehouse"></i></a>
+        </section>
     </header>
     <main>
         <button id="goToTop">
