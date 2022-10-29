@@ -446,7 +446,8 @@ footer {
   main article {
     max-width: 85vw; }
   main .Seb-pic-container {
-    grid-template-areas: 'seb' 'sf90'; }
+    grid-template-areas: 'seb'
+ 'sf90'; }
     main .Seb-pic-container img {
       max-width: 85%; }
   .box-container {
