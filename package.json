@@ -4,7 +4,7 @@
   "description": "This is my OG website, but using a side navbar. I made this so I can practice making a whole website. I like making sidebars :)",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w scss/ -o CSS/ --recursive"
   },
   "repository": {
     "type": "git",
