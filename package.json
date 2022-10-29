@@ -1,0 +1,22 @@
+{
+  "name": "sebastian-sidebar",
+  "version": "1.0.0",
+  "description": "This is my OG website, but using a side navbar. I made this so I can practice making a whole website. I like making sidebars :)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klrfl/Sebastian-Sidebar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klrfl/Sebastian-Sidebar/issues"
+  },
+  "homepage": "https://github.com/Klrfl/Sebastian-Sidebar#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
