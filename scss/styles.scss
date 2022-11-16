@@ -261,6 +261,7 @@ header{
 
 main{
     color: map-get($main-color-scheme, font-color);
+    min-height: calc(100vh - 2rem);
     article{
         max-width: 75vw;
         margin: auto;
@@ -297,23 +298,14 @@ main{
 
 //home.html and basic styling
 .Seb-pic-container{
-    display: grid;
-    grid-template-areas:
-    'seb sf90';
+    display: flex;
+    flex-wrap: wrap;
     gap: 1em;
-    justify-items: center;
-    
+    justify-content: center;
     img{
-        border-radius: 1em;
-        max-width: 100%;
-    }
-
-    img:first-child{
-        grid-area: 'seb';
-    }
-
-    img:nth-child(2){
-        grid-area: 'sf90';
+        border-radius: .5em;
+        flex: 1 1 0;
+        max-width: 45%;
     }
 }
 
@@ -601,7 +593,7 @@ footer{
 
 
 //media query
-@media screen and (max-width: 750px){
+@media screen and (max-width: 55em){
     #sidebar{
         width: 100%;
         
@@ -631,12 +623,8 @@ footer{
         }
 
         .Seb-pic-container{
-            grid-template-areas:
-            'seb'
-            'sf90';
-        
             img{
-                max-width: 85%;
+                max-width: 100%;
             }
         }
     }
